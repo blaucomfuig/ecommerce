@@ -82,7 +82,7 @@ function enviarPedido(){
     enviarMensaje();
     let totalPrecio = document.querySelector(".totalPrecio").innerHTML
     window.location.href ="https://api.whatsapp.com/send/?phone=" + numeroEmpresa + "&text="+ pedido + "Precio total =" + totalPrecio +"&app_absent=0";
-    reinicio();
+    retorno();
 }
     function enviarMensaje() {
         for (let i = 0; i < carrito.length; i++){
