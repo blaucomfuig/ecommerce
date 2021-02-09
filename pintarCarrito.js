@@ -81,7 +81,7 @@ function vaciarArray(){
 function enviarPedido(){
     enviarMensaje();
     let totalPrecio = document.querySelector(".totalPrecio").innerHTML
-    window.open("https://api.whatsapp.com/send/?phone=" + numeroEmpresa + "&text="+ pedido + "Precio total =" + totalPrecio +"&app_absent=0");
+    window.open("https://api.whatsapp.com/send/?phone=" + numeroEmpresa + "&text="+ pedido + "Domicilio" + "Precio total =" + totalPrecio +"&app_absent=0");
     retorno();
     location.reload();
 }
